@@ -1,6 +1,3 @@
-/*
-*/
-
 /// [Begin] Adapted from JsUnit
 function _getStackTrace() {
     var result = '';

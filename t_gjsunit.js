@@ -1,4 +1,4 @@
-const gjsunit = imports.gjsunit.gjsunit;
+const gjsunit = imports.gjsunit;
 
 var gusuite = new gjsunit.Suite("Test GjsUnit");
 
