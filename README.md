@@ -7,7 +7,7 @@ GjsUnit is made of only one Js file you can add to your projects and start testi
 
 This repository is made of 3 files:
 - gjsunit.js the test framework itself
-- t_gjsunit a test suite to illustrates how to use GjsUnit
+- t_gjsunit.js a test suite to illustrates how to use GjsUnit
 - run.js the file to run the tests.
 
 
