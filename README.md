@@ -45,5 +45,6 @@ TypeError: null has no properties
 * at _anonymous_ (@run.js:8)
 
 Suite(50.00%) - Run: 4 - OK: 2 - Failed: 1 - Errors: 1
+
 GLOBAL(50.00%) - Suites: 1 - Tests: 4 - OK: 2 - Failed: 1 - Errors: 1
 
