@@ -38,7 +38,7 @@ GjsUnitException: a failure
 Test: Test error
 
 TypeError: null has no properties
-_ Stack trace:
+* _ Stack trace:
 * at _anonymous_ (t_gjsunit.js:22)
 * at Runner.run (gjsunit.js:211)
 * at wrapper (lang.js:213)
