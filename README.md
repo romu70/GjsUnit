@@ -11,13 +11,13 @@ This repository is made of 3 files:
 - run.js the file to run the tests.
 
 To run GjsUnit:
-1. clone this repo
-2. open a terminal in the GjsUnit folder
-3. run "GJS_PATH=. gjs run.js"
+- clone this repo
+- open a terminal in the GjsUnit folder
+- run "GJS_PATH=. gjs run.js"
 
 And you should see the trace of the provided test suite:
 
-~/GjsUnit$ GJS_PATH=. gjs run.js
+~/GjsUnit$ **GJS_PATH=. gjs run.js**
 GjsUnit to run 1 suite(s)
 Starting suite: Test GjsUnit - 4 test(s) to run
 Test: Test NotNull
@@ -44,9 +44,6 @@ at Runner.run (gjsunit.js:211)
 at wrapper (lang.js:213)
 at _anonymous_ (@run.js:8)
 
------------------------------------------------------
 Suite(50.00%) - Run: 4 - OK: 2 - Failed: 1 - Errors: 1
---------------------------------------------------------------------
 GLOBAL(50.00%) - Suites: 1 - Tests: 4 - OK: 2 - Failed: 1 - Errors: 1
---------------------------------------------------------------------
 
