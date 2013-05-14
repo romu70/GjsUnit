@@ -23,7 +23,6 @@ And you should see the trace of the provided test suite:
 * Test: Test NotNull
 * Test: Test Null
 * Test: Test fail
-
 * GjsUnitException: a failure
 * _ Stack trace:
 *  at _getStackTrace (gjsunit.js:7)
@@ -34,9 +33,7 @@ And you should see the trace of the provided test suite:
 *  at Runner.run (gjsunit.js:211)
 *  at wrapper (lang.js:213)
 *  at _anonymous_ (@run.js:8)
-
 * Test: Test error
-
 * TypeError: null has no properties
 * _ Stack trace:
 *  at _anonymous_ (t_gjsunit.js:22)
