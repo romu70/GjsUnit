@@ -45,5 +45,5 @@ And you should see the trace of the provided test suite:
 
 * GLOBAL(50.00%) - Suites: 1 - Tests: 4 - OK: 2 - Failed: 1 - Errors: 1
 
-Indeed, the output in the terminal will be more user friendly, I just can get the same from the GitHub markdown ;-)
+Indeed, the output in the terminal will be more user friendly, I just can't get the same from the GitHub markdown ;-)
 
