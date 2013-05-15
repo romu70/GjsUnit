@@ -20,11 +20,11 @@ And you should see the trace of the provided test suite:
 ~/GjsUnit$ **GJS_PATH=. gjs run.js**
 * GjsUnit to run 1 suite(s)
 * Starting suite: Test GjsUnit - 4 test(s) to run
-* Test: Test NotNull
-* Test: Test Null
-* Test: Test fail
+* Test: Test NotNull..........OK
+* Test: Test Null..........OK
+* Test: Test fail..........KO
+
 * GjsUnitException: a failure
-* _ Stack trace:
 *  at _getStackTrace (gjsunit.js:7)
 *  at GjsUnitException (gjsunit.js:47)
 *  at _assert (gjsunit.js:62)
@@ -33,9 +33,10 @@ And you should see the trace of the provided test suite:
 *  at Runner.run (gjsunit.js:211)
 *  at wrapper (lang.js:213)
 *  at _anonymous_ (@run.js:8)
-* Test: Test error
+
+* Test: Test error..........KO
+
 * TypeError: null has no properties
-* _ Stack trace:
 *  at _anonymous_ (t_gjsunit.js:22)
 *  at Runner.run (gjsunit.js:211)
 *  at wrapper (lang.js:213)
