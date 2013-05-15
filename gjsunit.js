@@ -204,24 +204,35 @@ const Runner = new imports.lang.Class({
             print("Starting suite: " + aSuite.title + " - " + nb + " test(s) to run");
 
             for(let j = 0; j < nb; j++) {
-                print("Test: " + aSuite.getTestDescription(j));
-                aSuite.setup();
+
+                let test = "Test: " + aSuite.getTestDescription(j) + "..........";
+                let stack = '';
 
                 try {
+                    aSuite.setup();
                     aSuite.getTest(j)();
-                } catch(e) {
-                      if (typeof(e.isGjsUnitException) != 'undefined' && e.isGjsUnitException) {
-                        print('\n' + e.message);
-                        print('- Stack trace:\n' + e.stackTrace);
-                        failed++;
-                      }
-                      else {
-                        errors++;
-                        print('\n' + e);
-                        print('- Stack trace:\n' + _parseStackTrace(e));
-                      }
+                    aSuite.teardown();
+                    test += "OK";
                 }
-                aSuite.teardown();
+                catch(e) {
+                    if (typeof(e.isGjsUnitException) != 'undefined' && e.isGjsUnitException) {
+                        stack += '\n' + e.message;
+                        stack += '\n' + e.stackTrace;
+                        failed++;
+                    }
+                    else {
+                        stack += '\n' + e;
+                        stack += '\n' + _parseStackTrace(e);
+                        errors++;
+                    }
+
+                    test += "KO";
+                }
+
+                print(test);
+                if(stack.length > 0) {
+                    print(stack);
+                }
             };
 
             // Display the results for the suite
