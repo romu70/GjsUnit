@@ -17,34 +17,34 @@ To run GjsUnit:
 
 And you should see the trace of the provided test suite:
 
+```
 ~/GjsUnit$ **GJS_PATH=. gjs run.js**
-* GjsUnit to run 1 suite(s)
-* Starting suite: Test GjsUnit - 4 test(s) to run
-* Test: Test NotNull..........OK
-* Test: Test Null..........OK
-* Test: Test fail..........KO
+GjsUnit to run 1 suite(s)
+Starting suite: Test GjsUnit - 4 test(s) to run
+Test: Test NotNull..........OK
+Test: Test Null..........OK
+Test: Test fail..........KO
 
-* GjsUnitException: a failure
-*  at _getStackTrace (gjsunit.js:7)
-*  at GjsUnitException (gjsunit.js:47)
-*  at _assert (gjsunit.js:62)
-*  at fail (gjsunit.js:90)
-*  at _anonymous_ (t_gjsunit.js:18)
-*  at Runner.run (gjsunit.js:211)
-*  at wrapper (lang.js:213)
-*  at _anonymous_ (@run.js:8)
+GjsUnitException: a failure
+at _getStackTrace (gjsunit.js:7)
+at GjsUnitException (gjsunit.js:47)
+at _assert (gjsunit.js:62)
+at fail (gjsunit.js:90)
+at _anonymous_ (t_gjsunit.js:18)
+at Runner.run (gjsunit.js:211)
+at wrapper (lang.js:213)
+at _anonymous_ (@run.js:8)
 
-* Test: Test error..........KO
+Test: Test error..........KO
 
-* TypeError: null has no properties
-*  at _anonymous_ (t_gjsunit.js:22)
-*  at Runner.run (gjsunit.js:211)
-*  at wrapper (lang.js:213)
-*  at _anonymous_ (@run.js:8)
+TypeError: null has no properties
+at _anonymous_ (t_gjsunit.js:22)
+at Runner.run (gjsunit.js:211)
+at wrapper (lang.js:213)
+at _anonymous_ (@run.js:8)
 
-* Suite(50.00%) - Run: 4 - OK: 2 - Failed: 1 - Errors: 1
+Suite(50.00%) - Run: 4 - OK: 2 - Failed: 1 - Errors: 1
 
-* GLOBAL(50.00%) - Suites: 1 - Tests: 4 - OK: 2 - Failed: 1 - Errors: 1
-
-Indeed, the output in the terminal will be more user friendly, I just can't get the same from the GitHub markdown ;-)
+GLOBAL(50.00%) - Suites: 1 - Tests: 4 - OK: 2 - Failed: 1 - Errors: 1
+```
 
