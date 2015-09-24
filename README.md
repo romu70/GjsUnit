@@ -18,7 +18,7 @@ To run GjsUnit:
 And you should see the trace of the provided test suite:
 
 ```
-~/GjsUnit$ **GJS_PATH=. gjs run.js**
+~/GjsUnit$ GJS_PATH=. gjs run.js
 GjsUnit to run 1 suite(s)
 Starting suite: Test GjsUnit - 4 test(s) to run
 Test: Test NotNull..........OK
